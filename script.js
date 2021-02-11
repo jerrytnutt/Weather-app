@@ -7,15 +7,15 @@ let tempature = 0
 let feelsLike = 0
 
 async function receiveWeatherData (identifier,searchType) {
-  const key = 'da0c7443093022fcbd7196d44b46c667';
+  const myKey = config.MY_KEY;
   
   if(searchType == 'city'){
 
-    var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${identifier}&appid=${key}`);
+    var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${identifier}&appid=${myKey}`);
   
   }else if(searchType == 'coordinates'){
     
-    var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${identifier[0]}&lon=${identifier[1]}&appid=${key}`)
+    var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${identifier[0]}&lon=${identifier[1]}&appid=${myKey}`)
   }
 
    var data = await response.json();
