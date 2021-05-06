@@ -1,9 +1,8 @@
 # Weather-app
 
-# The Odin Project
 Weather App from the [Odin Project Curriculum](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
-# consepts used:
+# Consepts used:
 - Async JS
 - Promises
 - Openweather API
